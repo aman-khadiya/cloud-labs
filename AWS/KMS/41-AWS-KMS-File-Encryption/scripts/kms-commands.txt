@@ -1,0 +1,20 @@
+# Encrypt File
+
+aws kms encrypt \
+--key-id alias/datacenter-KMS-Key \
+--plaintext fileb:///root/SensitiveData.txt \
+--query CiphertextBlob \
+--output text | base64 --decode > /root/EncryptedData.bin
+
+
+# Decrypt File
+
+aws kms decrypt \
+--ciphertext-blob fileb:///root/EncryptedData.bin \
+--output text \
+--query Plaintext | base64 --decode > /root/DecryptedData.txt
+
+
+# Compare Files
+
+diff /root/SensitiveData.txt /root/DecryptedData.txt
