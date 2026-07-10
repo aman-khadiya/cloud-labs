@@ -1,0 +1,15 @@
+# Configure AWS CLI
+aws configure
+
+# List existing key pairs
+aws ec2 describe-key-pairs
+
+# Create RSA Key Pair
+aws ec2 create-key-pair \
+    --key-name nautilus-kp \
+    --key-type rsa \
+    --query 'KeyMaterial' \
+    --output text > nautilus-kp.pem
+
+# Verify
+aws ec2 describe-key-pairs --key-names nautilus-kp
