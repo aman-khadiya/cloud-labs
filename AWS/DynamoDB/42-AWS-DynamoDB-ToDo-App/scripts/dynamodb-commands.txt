@@ -1,0 +1,19 @@
+Task completed using AWS Management Console.
+
+Table Name:
+devops-tasks
+
+Partition Key:
+taskId (String)
+
+Inserted Items:
+
+Task 1
+taskId = 1
+description = Learn DynamoDB
+status = completed
+
+Task 2
+taskId = 2
+description = Build To-Do App
+status = in-progress
