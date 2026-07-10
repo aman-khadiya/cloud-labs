@@ -1,0 +1,32 @@
+# Get Storage Account Key
+az storage account keys list \
+--resource-group <resource-group> \
+--account-name <storage-account>
+
+# List Blobs
+az storage blob list \
+--account-name <storage-account> \
+--account-key <account-key> \
+--container-name <container>
+
+# Download all blobs
+az storage blob download-batch \
+--destination /opt \
+--source <container> \
+--account-name <storage-account> \
+--account-key <account-key>
+
+# Verify downloaded files
+ls -l /opt
+
+# Delete Blob Container
+az storage container delete \
+--name <container> \
+--account-name <storage-account> \
+--account-key <account-key>
+
+# Verify container deletion
+az storage container exists \
+--name <container> \
+--account-name <storage-account> \
+--account-key <account-key>
