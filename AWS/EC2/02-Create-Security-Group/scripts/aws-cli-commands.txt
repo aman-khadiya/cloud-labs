@@ -1,0 +1,25 @@
+# Configure AWS CLI
+aws configure
+
+# Create Security Group
+aws ec2 create-security-group \
+    --group-name nautilus-sg \
+    --description "Security group for Nautilus App Servers"
+
+# Allow HTTP
+aws ec2 authorize-security-group-ingress \
+    --group-name nautilus-sg \
+    --protocol tcp \
+    --port 80 \
+    --cidr 0.0.0.0/0
+
+# Allow SSH
+aws ec2 authorize-security-group-ingress \
+    --group-name nautilus-sg \
+    --protocol tcp \
+    --port 22 \
+    --cidr 0.0.0.0/0
+
+# Verify
+aws ec2 describe-security-groups \
+    --group-names nautilus-sg
