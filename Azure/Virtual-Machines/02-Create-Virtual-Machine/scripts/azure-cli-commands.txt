@@ -1,0 +1,15 @@
+# Generate RSA SSH Key Pair on azure-client
+
+ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_rsa -N ""
+
+# Display the Public Key
+
+cat ~/.ssh/id_rsa.pub
+
+# Connect to the Virtual Machine
+
+ssh azureuser@<PUBLIC_IP>
+
+# Exit from the VM
+
+exit
