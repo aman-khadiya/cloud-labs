@@ -1,0 +1,17 @@
+# Configure AWS CLI
+aws configure
+
+# Get the default VPC ID
+aws ec2 describe-vpcs \
+    --filters "Name=isDefault,Values=true"
+
+# Create Subnet
+aws ec2 create-subnet \
+    --vpc-id <default-vpc-id> \
+    --cidr-block 172.31.96.0/20 \
+    --availability-zone us-east-1a \
+    --tag-specifications 'ResourceType=subnet,Tags=[{Key=Name,Value=devops-subnet}]'
+
+# Verify
+aws ec2 describe-subnets \
+    --filters "Name=tag:Name,Values=devops-subnet"
