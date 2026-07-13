@@ -1,0 +1,29 @@
+# List Resource Groups
+az group list --output table
+
+# Create Azure Virtual Machine
+az vm create \
+  --resource-group <RESOURCE_GROUP_NAME> \
+  --name devops-vm \
+  --image Ubuntu2204 \
+  --size Standard_B2s \
+  --admin-username azureuser \
+  --generate-ssh-keys \
+  --storage-sku Standard_LRS \
+  --os-disk-size-gb 30
+
+# Check VM Running Status
+az vm show \
+  --resource-group <RESOURCE_GROUP_NAME> \
+  --name devops-vm \
+  --show-details \
+  --query "powerState"
+
+# Get Public IP
+az vm list-ip-addresses \
+  --resource-group <RESOURCE_GROUP_NAME> \
+  --name devops-vm \
+  --output table
+
+# Connect to VM
+ssh azureuser@<PUBLIC_IP>
