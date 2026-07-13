@@ -1,0 +1,78 @@
+==================================================
+Azure Application Gateway with NGINX
+==================================================
+
+# Cloud-init Script
+
+#!/bin/bash
+
+apt-get update
+apt-get install nginx -y
+systemctl enable nginx
+systemctl start nginx
+
+--------------------------------------------------
+
+# Verify NGINX
+
+curl localhost
+
+--------------------------------------------------
+
+# Check NGINX Status
+
+systemctl status nginx
+
+--------------------------------------------------
+
+# Restart NGINX
+
+sudo systemctl restart nginx
+
+--------------------------------------------------
+
+# Enable NGINX
+
+sudo systemctl enable nginx
+
+--------------------------------------------------
+
+# Start NGINX
+
+sudo systemctl start nginx
+
+--------------------------------------------------
+
+# Stop NGINX
+
+sudo systemctl stop nginx
+
+--------------------------------------------------
+
+# Check Listening Port
+
+ss -tulpn | grep 80
+
+--------------------------------------------------
+
+# Test from Browser
+
+http://<VM-Public-IP>
+
+--------------------------------------------------
+
+# Test through Application Gateway
+
+http://<Application-Gateway-Public-IP>
+
+--------------------------------------------------
+
+# Git Commands
+
+git status
+
+git add .
+
+git commit -m "Add Azure Application Gateway with NGINX project"
+
+git push origin main
