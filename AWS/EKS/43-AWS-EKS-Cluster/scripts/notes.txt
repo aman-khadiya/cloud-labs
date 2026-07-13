@@ -1,0 +1,28 @@
+No CLI commands were required.
+
+This task was completed using the AWS Management Console.
+
+Configuration Summary
+
+Cluster Name:
+xfusion-eks
+
+IAM Role:
+eksClusterRole
+
+Configuration:
+Custom
+
+Auto Mode:
+Disabled
+
+Endpoint:
+Private
+
+VPC:
+Default
+
+Availability Zones:
+us-east-1a
+us-east-1b
+us-east-1c
