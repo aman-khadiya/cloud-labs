@@ -1,0 +1,11 @@
+# Configure AWS CLI
+aws configure
+
+# Enable versioning for the S3 bucket
+aws s3api put-bucket-versioning \
+    --bucket xfusion-s3-13671 \
+    --versioning-configuration Status=Enabled
+
+# Verify versioning status
+aws s3api get-bucket-versioning \
+    --bucket xfusion-s3-13671
