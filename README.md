@@ -1,107 +1,172 @@
-# ☁️ Cloud Labs
+<div align="center">
 
-Welcome to my Cloud Labs repository!
+# ☁️ Cloud Labs Portfolio
 
-This repository contains my hands-on practice, lab documentation, and learning journey in Cloud Computing using AWS, Microsoft Azure, and Linux.
+### Hands-on AWS & Microsoft Azure Projects
 
-## 👨‍💻 About Me
-
-Hi, I'm **Aman Khadiya**.
-
-I'm an aspiring Cloud Engineer with hands-on experience in AWS, Microsoft Azure, and Linux through practical labs, cloud exercises, and self-learning projects.
-
-This repository documents everything I learn and practice while building real-world cloud skills.
+Building practical cloud skills through **AWS Free Tier**, **Microsoft Azure**, and **KodeKloud Engineer**.
 
 ---
 
-# 🚀 Technologies
+[![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)](https://aws.amazon.com/)
+[![Azure](https://img.shields.io/badge/Microsoft_Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)](https://azure.microsoft.com/)
+[![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://ubuntu.com/)
+[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
 
-- Amazon Web Services (AWS)
-- Microsoft Azure
-- Linux
-- Git & GitHub
-
----
-
-# 📂 Repository Structure
-
-```
-cloud-labs
-│
-├── AWS
-├── Azure
-├── Linux
-└── Projects
-```
+</div>
 
 ---
 
-# ☁️ AWS Topics
+# 👋 About This Repository
+
+Welcome!
+
+This repository contains my practical cloud learning journey with **Amazon Web Services (AWS)**, **Microsoft Azure**, and **Linux**.
+
+Every topic includes hands-on labs, screenshots, commands, notes, and documentation created while practicing on:
+
+- AWS Free Tier
+- Microsoft Azure Portal
+- KodeKloud Engineer
+
+---
+
+# 🚀 Technologies Covered
+
+## ☁️ Amazon Web Services
 
 - EC2
 - IAM
-- S3
 - VPC
+- S3
 - EBS
 - Elastic IP
 - ENI
 - AMI
-- Snapshots
-- Load Balancer
 - CloudWatch
-- RDS
-- Lambda
 - ECS
+- ECR
+- Lambda
+- Route53
+- RDS
+- KMS
+- CloudFormation
+- Auto Scaling
+- ELB
+- EFS
 - EKS
+- DynamoDB
 
 ---
 
-# 🔷 Azure Topics
+## 🔷 Microsoft Azure
 
 - Virtual Machines
-- Virtual Network
-- Managed Disks
-- Public IP
+- Virtual Networks
 - Network Security Groups
+- Managed Disks
+- Blob Storage
+- Azure SQL
 - Azure CLI
-- Resource Groups
+- Azure Container Registry
+- Azure Key Vault
+- Application Gateway
+- ARM Templates
+- Azure Monitor
+- Storage Lifecycle
+- VNet Peering
 
 ---
 
-# 🐧 Linux Topics
+## 🐧 Linux
 
-- File Management
-- Permissions
-- Users & Groups
+- Linux Administration
 - SSH
+- File Management
+- User Management
+- Package Management
 - Networking
-- Processes
-- Logs
-- Compression
+- Permissions
 
 ---
 
-# 📚 Learning Resources
+# 📁 Repository Structure
 
-- KodeKloud Cloud Labs
-- AWS Free Tier
-- Microsoft Azure
-- Linux Practice
+```text
+Cloud-Labs
+│
+├── AWS
+│   ├── EC2
+│   ├── IAM
+│   ├── VPC
+│   ├── S3
+│   ├── RDS
+│   ├── Lambda
+│   ├── CloudWatch
+│   └── ...
+│
+├── Azure
+│   ├── Virtual Machines
+│   ├── Storage
+│   ├── Networking
+│   └── ...
+│
+└── Linux
+```
 
 ---
 
-# 🎯 Goal
+# 💻 What You'll Find
 
-Build practical cloud skills through hands-on labs and real-world projects while documenting everything professionally.
+✔ Hands-on Labs
+
+✔ Architecture Diagrams
+
+✔ Step-by-Step Documentation
+
+✔ Screenshots
+
+✔ CLI Commands
+
+✔ Troubleshooting Notes
+
+✔ Best Practices
 
 ---
 
-# 📈 Repository Status
+# 📜 Certifications
 
-🚧 Currently under development.
-
-New labs and documentation are added regularly.
+- AWS Basics — KodeKloud
+- Linux For Absolute Beginners — KodeKloud
+- Sololearn Web Development
+- Sololearn HTML
+- Sololearn CSS
+- Sololearn JavaScript
+- TCS iON Career Edge
+- SOIT
+- Student Excellence & Learning Program (SELP)
 
 ---
 
-⭐ Thank you for visiting my repository!
+# 🎯 Objective
+
+The objective of this repository is to document my cloud learning journey while building practical knowledge in AWS, Azure, Linux, and Cloud Infrastructure.
+
+This repository will continue growing as I complete more cloud projects and hands-on labs.
+
+---
+
+<div align="center">
+
+### ⭐ If you found this repository helpful, consider giving it a Star.
+
+</div>
+
+---
+
+# 📫 Connect With Me
+
+- **LinkedIn:** https://linkedin.com/in/aman-khadiya
+- **GitHub:** https://github.com/aman-khadia
+- **Email:** info.amankhadiya@gmail.com
