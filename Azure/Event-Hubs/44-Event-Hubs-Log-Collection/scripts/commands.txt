@@ -1,0 +1,22 @@
+# List existing virtual machines
+az vm list -d -o table
+
+# Connect to the existing VM
+ssh azureuser@4.227.248.134
+
+# Verify the Python script
+ls /home/azureuser
+
+# View the script content
+cat /home/azureuser/send_logs.py
+
+# Edit the script and replace the placeholder connection string
+nano /home/azureuser/send_logs.py
+
+# Execute the script multiple times
+python3 /home/azureuser/send_logs.py
+python3 /home/azureuser/send_logs.py
+python3 /home/azureuser/send_logs.py
+
+# Exit the VM
+exit
