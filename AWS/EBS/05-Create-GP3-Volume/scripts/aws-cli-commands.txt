@@ -1,0 +1,15 @@
+# Set AWS Region
+aws configure set region us-east-1
+
+# Create GP3 EBS Volume
+aws ec2 create-volume \
+    --availability-zone us-east-1a \
+    --size 2 \
+    --volume-type gp3 \
+    --tag-specifications 'ResourceType=volume,Tags=[{Key=Name,Value=devops-volume}]'
+
+# List EBS Volumes
+aws ec2 describe-volumes
+
+# View Specific Volume (Replace <volume-id>)
+aws ec2 describe-volumes --volume-ids <volume-id>
