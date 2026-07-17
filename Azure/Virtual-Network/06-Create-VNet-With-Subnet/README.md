@@ -129,37 +129,37 @@ No issues were encountered during implementation.
 
 ## 01. Task
 
-[![Task](Screenshots/01-task)](Screenshots/01-task)
+[![Task](Screenshots/01-task.png)](Screenshots/01-task.png)
 
 ---
 
 ## 02. Configure Subnet
 
-[![Configure Subnet](Screenshots/02-configure-subnet)](Screenshots/02-configure-subnet)
+[![Configure Subnet](Screenshots/02-configure-subnet.png)](Screenshots/02-configure-subnet.png)
 
 ---
 
 ## 03. Review & Create
 
-[![Review Create](Screenshots/03-review-create)](Screenshots/03-review-create)
+[![Review Create](Screenshots/03-review-create.png)](Screenshots/03-review-create.png)
 
 ---
 
 ## 04. VNet Overview
 
-[![VNet Overview](Screenshots/04-vnet-overview)](Screenshots/04-vnet-overview)
+[![VNet Overview](Screenshots/04-vnet-overview.png)](Screenshots/04-vnet-overview.png)
 
 ---
 
 ## 05. Subnet Overview
 
-[![Subnet Overview](Screenshots/05-subnet-overview)](Screenshots/05-subnet-overview)
+[![Subnet Overview](Screenshots/05-subnet-overview.png)](Screenshots/05-subnet-overview.png)
 
 ---
 
 ## 06. Task Completed
 
-[![Task Completed](Screenshots/06-task-completed)](Screenshots/06-task-completed)
+[![Task Completed](Screenshots/06-task-completed.png)](Screenshots/06-task-completed.png)
 
 ---
 
