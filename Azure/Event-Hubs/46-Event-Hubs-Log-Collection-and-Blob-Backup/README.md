@@ -173,73 +173,73 @@ pip3 install --break-system-packages azure-eventhub azure-storage-blob
 
 ### Event Hub Namespace Review
 
-[![Namespace Review](Screenshots/01-eventhub-namespace-review)](Screenshots/01-eventhub-namespace-review)
+[![Namespace Review](Screenshots/01-eventhub-namespace-review.png)](Screenshots/01-eventhub-namespace-review.png)
 
 ---
 
 ### Event Hub Review
 
-[![Event Hub Review](Screenshots/02-eventhub-review)](Screenshots/02-eventhub-review)
+[![Event Hub Review](Screenshots/02-eventhub-review.png)](Screenshots/02-eventhub-review.png)
 
 ---
 
 ### Storage Account Review
 
-[![Storage Account Review](Screenshots/03-storage-account-review)](Screenshots/03-storage-account-review)
+[![Storage Account Review](Screenshots/03-storage-account-review.png)](Screenshots/03-storage-account-review.png)
 
 ---
 
 ### Virtual Machine Review
 
-[![VM Review](Screenshots/04-vm-review)](Screenshots/04-vm-review)
+[![VM Review](Screenshots/04-vm-review.png)](Screenshots/04-vm-review.png)
 
 ---
 
 ### Event Hub Namespace Overview
 
-[![Namespace Overview](Screenshots/05-eventhub-namespace-overview)](Screenshots/05-eventhub-namespace-overview)
+[![Namespace Overview](Screenshots/05-eventhub-namespace-overview.png)](Screenshots/05-eventhub-namespace-overview.png)
 
 ---
 
 ### Event Hub Created
 
-[![Event Hub](Screenshots/06-eventhub-created)](Screenshots/06-eventhub-created)
+[![Event Hub](Screenshots/06-eventhub-created.png)](Screenshots/06-eventhub-created.png)
 
 ---
 
 ### Storage Account Overview
 
-[![Storage Account](Screenshots/07-storage-account-overview)](Screenshots/07-storage-account-overview)
+[![Storage Account](Screenshots/07-storage-account-overview.png)](Screenshots/07-storage-account-overview.png)
 
 ---
 
 ### Virtual Machine Overview
 
-[![VM Overview](Screenshots/08-vm-overview)](Screenshots/08-vm-overview)
+[![VM Overview](Screenshots/08-vm-overview.png)](Screenshots/08-vm-overview.png)
 
 ---
 
 ### Script Executed Successfully
 
-[![Script Success](Screenshots/09-script-success)](Screenshots/09-script-success)
+[![Script Success](Screenshots/09-script-success.png)](Screenshots/09-script-success.png)
 
 ---
 
 ### Event Hub Metrics
 
-[![Metrics](Screenshots/10-eventhub-metrics)](Screenshots/10-eventhub-metrics)
+[![Metrics](Screenshots/10-eventhub-metrics.png)](Screenshots/10-eventhub-metrics.png)
 
 ---
 
 ### Blob Storage Logs
 
-[![Blob Storage](Screenshots/11-blob-storage-logs)](Screenshots/11-blob-storage-logs)
+[![Blob Storage](Screenshots/11-blob-storage-logs.png)](Screenshots/11-blob-storage-logs.png)
 
 ---
 
 ### Task Completed
 
-[![Task Completed](Screenshots/12-task-completed)](Screenshots/12-task-completed)
+[![Task Completed](Screenshots/12-task-completed.png)](Screenshots/12-task-completed.png)
 
 ---
 
