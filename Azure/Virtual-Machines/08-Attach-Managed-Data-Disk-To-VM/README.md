@@ -33,13 +33,12 @@ Instead of creating a new disk, an already provisioned managed disk named **data
 
 ---
 
-# 🏗️ Architecture Diagram
-
 ```mermaid
 flowchart LR
-    A[Azure Managed Disk<br/>datacenter-disk]
-    -->|Attach as Data Disk|
-    B[Azure Virtual Machine<br/>datacenter-vm]
+    A["Managed Disk: datacenter-disk"]
+    B["Virtual Machine: datacenter-vm"]
+
+    A -->|"Attach as Data Disk"| B
 ```
 
 ---
