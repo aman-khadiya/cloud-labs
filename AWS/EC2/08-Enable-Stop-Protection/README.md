@@ -134,27 +134,33 @@ No issues were encountered during implementation.
 
 # 📸 Screenshots
 
-## 01. EC2 Instance Selected
+## 01. Task Details
 
-[![EC2 Instance Selected](Screenshots/01-ec2-instance-selected.png)](Screenshots/01-ec2-instance-selected.png)
-
----
-
-## 02. Enable Stop Protection
-
-[![Enable Stop Protection](Screenshots/02-enable-stop-protection.png)](Screenshots/02-enable-stop-protection.png)
+[![Task Details](Screenshots/01-task-details.png)](Screenshots/01-task-details.png)
 
 ---
 
-## 03. Stop Protection Enabled
+## 02. EC2 Instance Selected
 
-[![Stop Protection Enabled](Screenshots/03-stop-protection-enabled.png)](Screenshots/03-stop-protection-enabled.png)
+[![EC2 Instance Selected](Screenshots/02-ec2-instance-selected.png)](Screenshots/02-ec2-instance-selected.png)
 
 ---
 
-## 04. Task Completed
+## 03. Enable Stop Protection
 
-[![Task Completed](Screenshots/04-task-completed.png)](Screenshots/04-task-completed.png)
+[![Enable Stop Protection](Screenshots/03-enable-stop-protection.png)](Screenshots/03-enable-stop-protection.png)
+
+---
+
+## 04. Stop Protection Enabled
+
+[![Stop Protection Enabled](Screenshots/04-stop-protection-enabled.png)](Screenshots/04-stop-protection-enabled.png)
+
+---
+
+## 05. Task Completed
+
+[![Task Completed](Screenshots/05-task-completed.png)](Screenshots/05-task-completed.png)
 
 ---
 
