@@ -151,33 +151,39 @@ Commands/commands.md
 
 # 📸 Screenshots
 
-## 01. VM Network Settings
+## 01. Task Description
 
-[![VM Network Settings](Screenshots/01-vm-network-settings.png)](Screenshots/01-vm-network-settings.png)
-
----
-
-## 02. Attach Network Interface
-
-[![Attach Network Interface](Screenshots/02-attach-network-interface.png)](Screenshots/02-attach-network-interface.png)
+[![Task Description](Screenshots/01-task.png)](Screenshots/01-task.png)
 
 ---
 
-## 03. NIC Attached Successfully
+## 02. VM Network Settings
 
-[![NIC Attached](Screenshots/03-nic-attached.png)](Screenshots/03-nic-attached.png)
-
----
-
-## 04. VM Running
-
-[![VM Running](Screenshots/04-vm-overview.png)](Screenshots/04-vm-overview.png)
+[![VM Network Settings](Screenshots/02-vm-network-settings.png)](Screenshots/02-vm-network-settings.png)
 
 ---
 
-## 05. Task Completed
+## 03. Attach Network Interface
 
-[![Task Completed](Screenshots/05-task-completed.png)](Screenshots/05-task-completed.png)
+[![Attach Network Interface](Screenshots/03-attach-network-interface.png)](Screenshots/03-attach-network-interface.png)
+
+---
+
+## 04. NIC Attached Successfully
+
+[![NIC Attached Successfully](Screenshots/04-nic-attached.png)](Screenshots/04-nic-attached.png)
+
+---
+
+## 05. Virtual Machine Overview
+
+[![Virtual Machine Overview](Screenshots/05-vm-overview.png)](Screenshots/05-vm-overview.png)
+
+---
+
+## 06. Task Completed
+
+[![Task Completed](Screenshots/06-task-completed.png)](Screenshots/06-task-completed.png)
 
 ---
 
