@@ -74,19 +74,24 @@ Instead of exposing the complete application source code, only the required stat
 # 🏗 Architecture Diagram
 
 ```mermaid
-flowchart LR
+flowchart TD
 
-A[index.html on Azure Client]
+Client["Azure Client"]
+File["index.html"]
+Storage["Azure Blob Storage<br/>datacenterstor19515"]
+Container["Blob Container<br/>datacenter-container"]
+VM["Azure Virtual Machine<br/>datacenter-vm"]
+WebRoot["/var/www/html/index.html"]
+Nginx["Nginx Web Server"]
+Browser["Web Browser"]
 
---> B[Azure Blob Storage]
-
-B --> C[Azure Virtual Machine]
-
-C --> D[/var/www/html/index.html]
-
-D --> E[Nginx]
-
-E --> F[Browser]
+Client --> File
+File -->|Upload| Storage
+Storage --> Container
+Container -->|Download (Azure CLI)| VM
+VM --> WebRoot
+WebRoot --> Nginx
+Nginx -->|HTTP| Browser
 ```
 
 ---
