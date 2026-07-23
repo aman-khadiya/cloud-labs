@@ -74,23 +74,24 @@ Instead of exposing the complete application source code, only the required stat
 # 🏗 Architecture Diagram
 
 ```mermaid
-flowchart LR
+flowchart TD
+
     A["Azure Client"]
     B["index.html"]
     C["Azure Blob Storage"]
     D["Blob Container"]
     E["Azure Virtual Machine"]
-    F["/var/www/html/index.html"]
-    G["Nginx"]
+    F["Web Root (/var/www/html)"]
+    G["Nginx Web Server"]
     H["Browser"]
 
     A --> B
     B -->|Upload| C
     C --> D
-    D -->|Download| E
-    E --> F
-    F --> G
-    G -->|HTTP Port 80| H
+    D -->|Download using Azure CLI| E
+    E -->|Store| F
+    F -->|Serve Static Content| G
+    G -->|HTTP (Port 80)| H
 ```
 
 ---
