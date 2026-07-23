@@ -1,5 +1,19 @@
 # Commands Used
 
-This task was completed entirely using the AWS Management Console.
+> This lab was completed using the AWS Management Console.
 
-No AWS CLI commands were required.
+## AWS CLI Equivalent
+
+```bash
+aws ec2 attach-network-interface \
+    --network-interface-id eni-xxxxxxxx \
+    --instance-id i-xxxxxxxx \
+    --device-index 1
+```
+
+## Verify Attachment
+
+```bash
+aws ec2 describe-network-interfaces \
+    --network-interface-ids eni-xxxxxxxx
+```
