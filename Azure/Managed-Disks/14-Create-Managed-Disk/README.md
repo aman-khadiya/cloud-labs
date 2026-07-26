@@ -225,29 +225,23 @@ For CLI-based verification, `az disk show` can be used to inspect the deployed d
 
 The lab task specifies the required managed disk name, storage type, and disk size.
 
-### 2. Disk Configuration
+### 2. Review and Create
 
-[![Disk Configuration](Screenshots/02-disk-configuration.png)](Screenshots/02-disk-configuration.png)
+[![Review and Create](Screenshots/02-review-create.png)](Screenshots/02-review-create.png)
 
-Managed disk settings were configured according to the task requirements.
+Azure validation passed successfully, and the final managed disk configuration was reviewed before deployment. The configuration confirms the `datacenter-disk` name, **2 GiB** disk size, and **Standard HDD LRS** storage type.
 
-### 3. Review and Create
+### 3. Managed Disk Overview
 
-[![Review and Create](Screenshots/03-review-create.png)](Screenshots/03-review-create.png)
+[![Managed Disk Overview](Screenshots/03-disk-overview.png)](Screenshots/03-disk-overview.png)
 
-Azure validation passed and the final configuration was reviewed before creating the resource.
+The Azure Portal confirms that `datacenter-disk` was successfully provisioned with **2 GiB** capacity and **Standard HDD LRS (`Standard_LRS`)** storage. The disk is currently in the **Unattached** state.
 
-### 4. Managed Disk Overview
+### 4. Task Completed
 
-[![Managed Disk Overview](Screenshots/04-disk-overview.png)](Screenshots/04-disk-overview.png)
+[![Task Completed](Screenshots/04-task-completed.png)](Screenshots/04-task-completed.png)
 
-The Azure Portal confirms that `datacenter-disk` was created with **2 GiB** capacity and **Standard HDD LRS** storage.
-
-### 5. Task Completed
-
-[![Task Completed](Screenshots/05-task-completed.png)](Screenshots/05-task-completed.png)
-
-The lab validation confirms successful completion of the managed disk creation task.
+The lab validation confirms that the managed disk creation task was completed successfully.
 
 ---
 
