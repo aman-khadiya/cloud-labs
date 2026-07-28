@@ -1,26 +1,50 @@
 # Azure Blob Storage - Create Private Blob Container
 
 ![Azure](https://img.shields.io/badge/Platform-Microsoft_Azure-0078D4?logo=microsoftazure&logoColor=white)
-![Blob Storage](https://img.shields.io/badge/Service-Blob_Storage-blue)
-![Difficulty](https://img.shields.io/badge/Difficulty-Beginner-green)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![Service](https://img.shields.io/badge/Service-Blob_Storage-blue)
+![Difficulty](https://img.shields.io/badge/Difficulty-Beginner-brightgreen)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+
+---
+
+# 📋 Project Information
+
+| Property | Value |
+|----------|-------|
+| **Project** | Create Private Blob Container |
+| **Platform** | Microsoft Azure |
+| **Region** | East US |
+| **Resource Group** | Existing Lab Resource Group |
+| **Storage Account** | devopsst31105 |
+| **Blob Container** | devops-blob-13466 |
+| **Access Level** | Private (No Anonymous Access) |
 
 ---
 
 # 📖 Overview
 
-This project demonstrates how to create an Azure Storage Account and provision a private Blob Storage container. Blob containers provide scalable object storage for unstructured data such as documents, images, backups, and application files.
+Azure Blob Storage is Microsoft's object storage solution designed for storing massive amounts of unstructured data such as images, videos, backups, documents, and application files.
 
-A Storage Account named **devopsst31105** was created using the Standard performance tier with Locally Redundant Storage (LRS). Inside the storage account, a private Blob container named **devops-blob-13466** was created to securely store data without allowing anonymous public access.
+In this lab, a new Azure Storage Account named **devopsst31105** was created. Inside the storage account, a private Blob container named **devops-blob-13466** was provisioned. The container was configured with **Private (No Anonymous Access)** to ensure secure storage access.
 
 ---
 
 # 🎯 Objective
 
 - Create an Azure Storage Account.
-- Name the storage account **devopsst31105**.
-- Create a Blob container named **devops-blob-13466**.
-- Configure the Blob container with **Private (No Anonymous Access)**.
+- Create a private Blob container.
+- Configure the container with **Private (No Anonymous Access)**.
+- Verify successful deployment.
+
+---
+
+# 💡 Skills Demonstrated
+
+- Azure Storage Account creation
+- Azure Blob Storage management
+- Private Blob container creation
+- Secure storage configuration
+- Azure Portal resource management
 
 ---
 
@@ -33,58 +57,89 @@ A Storage Account named **devopsst31105** was created using the Standard perform
 
 # 🏗️ Architecture Diagram
 
-```text
-                 Azure Subscription
-                        │
-                        ▼
-         Storage Account (devopsst31105)
-                        │
-                        ▼
-     Private Blob Container (devops-blob-13466)
+```mermaid
+flowchart TD
+
+    A["Azure Subscription"]
+    B["Storage Account<br/>devopsst31105"]
+    C["Private Blob Container<br/>devops-blob-13466"]
+
+    A --> B
+    B --> C
 ```
 
 ---
 
 # 📝 Steps Performed
 
-1. Logged into the Azure Portal.
+1. Logged in to the Azure Portal.
 2. Opened **Storage Accounts**.
-3. Created a new Storage Account named **devopsst31105**.
-4. Selected Standard Performance with Locally Redundant Storage (LRS).
+3. Created a Storage Account named **devopsst31105**.
+4. Selected **Standard Performance** and **Locally Redundant Storage (LRS)**.
 5. Reviewed the configuration and created the Storage Account.
 6. Opened the Storage Account.
 7. Navigated to **Data Storage → Containers**.
 8. Created a new Blob container named **devops-blob-13466**.
-9. Kept the access level as **Private (No Anonymous Access)**.
-10. Verified that the container was successfully created.
-11. Submitted the lab successfully.
+9. Selected **Private (No Anonymous Access)**.
+10. Verified successful container creation.
 
 ---
 
 # 💻 Commands Used
 
-This task was completed using the **Azure Portal**.
+This lab was performed using the **Azure Portal**.
 
-Equivalent Azure CLI commands are available in **Commands/commands.md**.
+Equivalent Azure CLI commands are available in:
+
+```text
+Commands/commands.md
+```
 
 ---
 
 # ⚠️ Troubleshooting
 
-- Ensure the Storage Account name is globally unique.
-- Keep the replication type as **Locally Redundant Storage (LRS)**.
-- Select **Private (No Anonymous Access)** for the Blob container.
-- Wait until deployment completes before creating the Blob container.
+- Storage Account names must be globally unique.
+- Use **Standard_LRS** replication.
+- Ensure the Blob container access level remains **Private**.
+- Wait until the Storage Account deployment completes before creating the container.
+
+---
+
+# 🐞 Debugging Notes
+
+- Verified the Storage Account deployment status before creating the Blob container.
+- Confirmed the Blob container access level as **Private**.
+- Verified that the container was successfully listed under the Storage Account.
+
+---
+
+# ✅ Best Practices
+
+- Use **Private** access unless public access is required.
+- Use LRS for development and lab environments.
+- Apply resource tags in production.
+- Enable lifecycle management for long-term Blob storage.
 
 ---
 
 # 📚 Key Learnings
 
-- Creating Azure Storage Accounts.
-- Understanding Blob Storage.
-- Creating private Blob containers.
-- Configuring secure storage using Private access.
-- Difference between Storage Account and Blob Container.
+- Azure Storage Account provisioning
+- Blob Storage fundamentals
+- Private container configuration
+- Secure object storage management
+- Azure Portal navigation
+
+---
+
+# 🔗 Related Concepts
+
+- Azure Storage Account
+- Azure Blob Storage
+- Storage Replication (LRS)
+- Container Access Levels
+- Azure CLI
 
 ---
 
@@ -92,34 +147,34 @@ Equivalent Azure CLI commands are available in **Commands/commands.md**.
 
 ### Task
 
-[<img src="Screenshots/01-task.png" width="700"/>](Screenshots/01-task.png)
+[<img src="Screenshots/01-task.png" width="700">](Screenshots/01-task.png)
 
 ---
 
-### Review and Create Storage Account
+### Review and Create
 
-[<img src="Screenshots/02-review-create-storage-account.png" width="700"/>](Screenshots/02-review-create-storage-account.png)
+[<img src="Screenshots/02-review-create-storage-account.png" width="700">](Screenshots/02-review-create-storage-account.png)
 
 ---
 
-### Create Private Blob Container
+### Create Blob Container
 
-[<img src="Screenshots/03-create-private-blob-container.png" width="700"/>](Screenshots/03-create-private-blob-container.png)
+[<img src="Screenshots/03-create-private-blob-container.png" width="700">](Screenshots/03-create-private-blob-container.png)
 
 ---
 
 ### Container Overview
 
-[<img src="Screenshots/04-container-overview.png" width="700"/>](Screenshots/04-container-overview.png)
+[<img src="Screenshots/04-container-overview.png" width="700">](Screenshots/04-container-overview.png)
 
 ---
 
 ### Task Completed
 
-[<img src="Screenshots/05-task-completed.png" width="700"/>](Screenshots/05-task-completed.png)
+[<img src="Screenshots/05-task-completed.png" width="700">](Screenshots/05-task-completed.png)
 
 ---
 
 # ✅ Result
 
-Successfully created the Azure Storage Account **devopsst31105** and the private Blob container **devops-blob-13466**. The container was configured with Private access and the lab completed successfully.
+Successfully created the Azure Storage Account **devopsst31105** and the private Blob container **devops-blob-13466** with **Private (No Anonymous Access)**. The deployment was verified and the lab completed successfully.
