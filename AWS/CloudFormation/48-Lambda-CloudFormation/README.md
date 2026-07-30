@@ -1,10 +1,10 @@
 # 🚀 AWS Lambda Deployment using CloudFormation
 
 ![AWS](https://img.shields.io/badge/AWS-Lambda-orange?logo=amazonaws)
-![CloudFormation](https://img.shields.io/badge/CloudFormation-Infrastructure_as_Code-blue)
+![CloudFormation](https://img.shields.io/badge/CloudFormation-IaC-blue)
 ![Python](https://img.shields.io/badge/Python-3.12-yellow?logo=python)
-![IAM](https://img.shields.io/badge/IAM-Role-red)
-![Status](https://img.shields.io/badge/Project-Completed-success)
+![IAM](https://img.shields.io/badge/IAM-Execution_Role-red)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
 ---
 
