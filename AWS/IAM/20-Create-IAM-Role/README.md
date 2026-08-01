@@ -152,27 +152,22 @@ AWS CLI commands used in this lab are available here:
 
 ---
 
-### 02 - Create Trust Policy using VI Editor
+### 02 - IAM Role Created using AWS CLI
 
-[![Create Trust Policy](Screenshots/02-create-trust-policy.png)](Screenshots/02-create-trust-policy.png)
-
----
-
-### 03 - Create IAM Role using AWS CLI
-
-[![Create IAM Role](Screenshots/03-create-role-cli.png)](Screenshots/03-create-role-cli.png)
+[![IAM Role Created](Screenshots/02-cli-role-created.png)](Screenshots/02-cli-role-created.png)
 
 ---
 
-### 04 - Verify Attached Policy
+### 03 - IAM Role with Attached Policy
 
-[![Verify Policy](Screenshots/04-role-policy-attached.png)](Screenshots/04-role-policy-attached.png)
+[![IAM Role with Policy](Screenshots/03-role-with-policy.png)](Screenshots/03-role-with-policy.png)
 
 ---
 
-### 05 - Task Completed
+### 04 - Task Completed
 
-[![Task Completed](Screenshots/05-task-completed.png)](Screenshots/05-task-completed.png)
+[![Task Completed](Screenshots/04-task-completed.png)](Screenshots/04-task-completed.png)
+
 
 ---
 
