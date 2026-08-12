@@ -71,19 +71,24 @@ This project implements a multi-stage AWS log aggregation workflow. A log file i
 ## Architecture Diagram
 
 ```mermaid
-flowchart LR
-    A["Private EC2<br/>xfusion-priv-ec2<br/>10.10.1.240<br/>/var/log/boots.log"]
-    B["Private VPC<br/>xfusion-priv-vpc<br/>10.10.0.0/16"]
-    P["VPC Peering<br/>xfusion-vpc-peering"]
-    C["Public VPC<br/>xfusion-pub-vpc<br/>10.20.0.0/16"]
-    D["Public EC2<br/>xfusion-pub-ec2<br/>10.20.1.174"]
-    E["Private S3 Bucket<br/>xfusion-s3-logs-32508<br/>xfusion-priv-vpc/boot/boots.log"]
+flowchart TB
+    P["Private EC2<br/>xfusion-priv-ec2<br/>10.10.1.240<br/>/var/log/boots.log"]
 
-    A -->|"SCP via private routing"| B
-    B --> P
-    P --> C
-    C --> D
-    D -->|"AWS CLI + IAM Role"| E
+    PV["Private VPC<br/>xfusion-priv-vpc<br/>10.10.0.0/16"]
+
+    PEER["VPC Peering<br/>xfusion-vpc-peering"]
+
+    UV["Public VPC<br/>xfusion-pub-vpc<br/>10.20.0.0/16"]
+
+    U["Public EC2<br/>xfusion-pub-ec2<br/>10.20.1.174"]
+
+    S["Private S3 Bucket<br/>xfusion-s3-logs-32508<br/>xfusion-priv-vpc/boot/boots.log"]
+
+    P -->|"SCP + Cron"| PV
+    PV --> PEER
+    PEER --> UV
+    UV --> U
+    U -->|"AWS CLI + IAM Role + Cron"| S
 ```
 
 ## Implementation Steps
