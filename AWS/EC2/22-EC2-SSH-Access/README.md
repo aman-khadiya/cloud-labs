@@ -84,18 +84,23 @@ The objective of this task was to deploy a Linux EC2 instance and establish secu
 
 ```mermaid
 flowchart LR
+
     A[aws-client<br/>Landing Host] -->|SSH TCP/22| B[Security Group]
+
     B --> C[nautilus-ec2<br/>Ubuntu 24.04]
-    A -->|id_rsa Private Key| C
+
+    A -->|SSH using id_rsa| C
+
     D[User Data] -->|Configure authorized_keys| C
 
     subgraph AWS[Amazon Web Services - us-east-1]
+
         B
         C
         D
+
     end
 ```
-
 ---
 
 ## Steps Performed
