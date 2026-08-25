@@ -78,19 +78,27 @@ The objective of this task is to:
 ```mermaid
 flowchart LR
     Internet((Internet))
-    HTTP["HTTP :80"]
-    NSG["Network Security Group<br/>Allow-HTTP"]
-    NIC["VM Network Interface"]
-    VM["Azure VM<br/>datacenter-vm"]
-    OS["Ubuntu 22.04 LTS"]
-    NGINX["Nginx Web Server"]
 
-    Internet -->|TCP 80| HTTP
-    HTTP --> NSG
+    subgraph Azure["Microsoft Azure - East US"]
+        NSG["Network Security Group<br/>Allow HTTP :80"]
+        NIC["VM Network Interface"]
+        VM["Azure VM<br/><b>datacenter-vm</b>"]
+        OS["Ubuntu 22.04 LTS<br/>Standard_B1s"]
+        NGINX["Nginx Web Server"]
+    end
+
+    Internet -->|"TCP :80"| NSG
     NSG --> NIC
     NIC --> VM
     VM --> OS
     OS --> NGINX
+
+    style Internet fill:#f5f5f5,stroke:#333,stroke-width:2px
+    style NSG fill:#fff3cd,stroke:#856404,stroke-width:2px
+    style NIC fill:#e8f4f8,stroke:#287b9a,stroke-width:2px
+    style VM fill:#e8f0ff,stroke:#2f5bea,stroke-width:2px
+    style OS fill:#f0f0f0,stroke:#555,stroke-width:2px
+    style NGINX fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
 ```
 
 ## Steps Performed
