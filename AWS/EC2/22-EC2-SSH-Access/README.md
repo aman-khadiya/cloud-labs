@@ -1,4 +1,3 @@
-````
 # Task 22 — Create EC2 Instance with SSH Root Access
 
 ![AWS](https://img.shields.io/badge/AWS-EC2-orange?logo=amazonaws)
