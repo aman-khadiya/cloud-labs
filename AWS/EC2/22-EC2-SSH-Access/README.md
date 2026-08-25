@@ -1,8 +1,3 @@
-Haan, **meri mistake thi**. 😅
-Problem ye hui ki maine README ko ek outer code block me diya, aur uske andar Mermaid/command ke liye **same triple backticks** use kar diye. Isliye chat ne beech me outer box close kar diya.
-
-Ab **outer box ke liye 4 backticks** use kar raha hoon, aur README ke andar normal **3 backticks**. Isse **pura README ek hi single copyable box** me rahega.
-
 ````
 # Task 22 — Create EC2 Instance with SSH Root Access
 
