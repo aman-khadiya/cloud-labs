@@ -108,7 +108,6 @@ flowchart TB
     class D vm;
     class E os;
     class F auth;
-    end
 ```
 
 ---
