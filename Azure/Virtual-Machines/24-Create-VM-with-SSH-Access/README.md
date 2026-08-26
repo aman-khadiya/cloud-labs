@@ -94,6 +94,21 @@ flowchart TB
         D --> E[Ubuntu 22.04 LTS]
         E --> F[azureuser<br/>SSH Public Key Authentication<br/>Passwordless SSH]
     end
+
+    classDef client fill:#d1fae5,stroke:#059669,stroke-width:2px,color:#064e3b;
+    classDef nsg fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#4c1d95;
+    classDef network fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#1e3a8a;
+    classDef vm fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#78350f;
+    classDef os fill:#fee2e2,stroke:#dc2626,stroke-width:2px,color:#7f1d1d;
+    classDef auth fill:#cffafe,stroke:#0891b2,stroke-width:2px,color:#164e63;
+
+    class A client;
+    class B nsg;
+    class C network;
+    class D vm;
+    class E os;
+    class F auth;
+    end
 ```
 
 ---
