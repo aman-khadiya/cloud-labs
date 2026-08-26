@@ -84,19 +84,15 @@ The objectives of this task were:
 ## Architecture Diagram
 
 ```mermaid
-flowchart LR
+flowchart TB
+
     A[azure-client<br/>SSH Client] -->|SSH TCP/22<br/>Public IP| B[Network Security Group<br/>Allow SSH]
-    B --> C[VM Network Interface]
-    C --> D[Azure VM<br/>devops-vm]
-    D --> E[Ubuntu 22.04 LTS]
-    E --> F[azureuser<br/>SSH Public Key Authentication]
 
     subgraph AZ[Microsoft Azure - West US]
-        B
-        C
-        D
-        E
-        F
+        B --> C[VM Network Interface<br/>Private IP: 10.0.0.4]
+        C --> D[Azure VM<br/>devops-vm<br/>Standard_B1s]
+        D --> E[Ubuntu 22.04 LTS]
+        E --> F[azureuser<br/>SSH Public Key Authentication<br/>Passwordless SSH]
     end
 ```
 
