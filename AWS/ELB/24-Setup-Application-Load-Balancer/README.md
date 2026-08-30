@@ -1,8 +1,3 @@
-Haan yrr 😭 **meri galti thi**. Problem ` ```mermaid ` ke wajah se ho rhi thi, kyunki README ko maine ` ```markdown ` ke andar diya tha aur uske andar firse ` ```mermaid ` aa gaya — outer code block wahi break ho gaya.
-
-Ab **outer block 4 backticks** ka hai, aur README ke andar Mermaid ka normal 3-backtick block hai. Isse **poora README ek hi continuous copyable block** rahega. 👇
-
-````markdown
 # AWS Application Load Balancer (ALB) Setup
 
 ![AWS](https://img.shields.io/badge/AWS-Cloud-orange?logo=amazon-aws)
