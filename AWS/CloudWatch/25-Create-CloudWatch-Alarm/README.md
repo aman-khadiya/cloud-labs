@@ -74,42 +74,38 @@ The alarm uses the **Average** statistic and triggers when CPU utilization is **
 
 ```mermaid
 classDiagram
-    class Client {
-        AWS CLI
-    }
+    direction LR
 
-    class EC2 {
-        devops-ec2
-        t2.micro
-        Ubuntu 24.04
-    }
+    class Client
+    class ALB
+    class SG
+    class TG
+    class EC2
+    class CloudWatch
+    class SNS
 
-    class CloudWatch {
-        devops-alarm
-        CPUUtilization
-        Average
-        Period: 300s
-        Threshold: >= 90%
-    }
+    Client --> ALB : HTTP/HTTPS
+    ALB --> SG : Secured by
+    ALB --> TG : Routes traffic
+    TG --> EC2 : Forwards requests
+    EC2 --> CloudWatch : Sends CPU metrics
+    CloudWatch --> SNS : Alarm notification
 
-    class SNS {
-        devops-sns-topic
-    }
+    classDef client fill:#DDEBFF,stroke:#4A90E2,stroke-width:2px,color:#000
+    classDef alb fill:#FFF0D6,stroke:#F5A623,stroke-width:2px,color:#000
+    classDef security fill:#FFE0E0,stroke:#D0021B,stroke-width:2px,color:#000
+    classDef target fill:#E5D9FF,stroke:#9013FE,stroke-width:2px,color:#000
+    classDef ec2 fill:#D9F2D9,stroke:#4CAF50,stroke-width:2px,color:#000
+    classDef monitoring fill:#E0F7FA,stroke:#00ACC1,stroke-width:2px,color:#000
+    classDef notification fill:#FFF4CC,stroke:#F8C300,stroke-width:2px,color:#000
 
-    Client --> EC2 : Launch
-    Client --> CloudWatch : Create & Verify
-    EC2 --> CloudWatch : CPU Metrics
-    CloudWatch --> SNS : Alarm Notification
-
-    classDef client fill:#232F3E,color:#FFFFFF,stroke:#FF9900,stroke-width:2px;
-    classDef compute fill:#E8F1FB,color:#111111,stroke:#4A90E2,stroke-width:2px;
-    classDef monitoring fill:#FFF3CD,color:#111111,stroke:#D39E00,stroke-width:2px;
-    classDef messaging fill:#E8F5E9,color:#111111,stroke:#2E7D32,stroke-width:2px;
-
-    class Client client;
-    class EC2 compute;
-    class CloudWatch monitoring;
-    class SNS messaging;
+    class Client client
+    class ALB alb
+    class SG security
+    class TG target
+    class EC2 ec2
+    class CloudWatch monitoring
+    class SNS notification
 ```
 
 ---
