@@ -73,38 +73,28 @@ The alarm uses the **Average** statistic and triggers when CPU utilization is **
 ## Architecture Diagram
 
 ```mermaid
-classDiagram
-    direction LR
+flowchart LR
+    Client["Client"]
+    EC2["EC2 Instance<br/>devops-ec2"]
+    CW["CloudWatch<br/>CPU Utilization"]
+    Alarm["CloudWatch Alarm<br/>devops-alarm"]
+    SNS["SNS Topic<br/>devops-sns-topic"]
 
-    class Client
-    class ALB
-    class SG
-    class TG
-    class EC2
-    class CloudWatch
-    class SNS
-
-    Client --> ALB : HTTP/HTTPS
-    ALB --> SG : Secured by
-    ALB --> TG : Routes traffic
-    TG --> EC2 : Forwards requests
-    EC2 --> CloudWatch : Sends CPU metrics
-    CloudWatch --> SNS : Alarm notification
+    Client -->|Application Traffic| EC2
+    EC2 -->|CPU Metrics| CW
+    CW -->|Monitors CPU ≥ 90%<br/>for 5 minutes| Alarm
+    Alarm -->|Alarm Notification| SNS
 
     classDef client fill:#DDEBFF,stroke:#4A90E2,stroke-width:2px,color:#000
-    classDef alb fill:#FFF0D6,stroke:#F5A623,stroke-width:2px,color:#000
-    classDef security fill:#FFE0E0,stroke:#D0021B,stroke-width:2px,color:#000
-    classDef target fill:#E5D9FF,stroke:#9013FE,stroke-width:2px,color:#000
-    classDef ec2 fill:#D9F2D9,stroke:#4CAF50,stroke-width:2px,color:#000
+    classDef compute fill:#D9F2D9,stroke:#4CAF50,stroke-width:2px,color:#000
     classDef monitoring fill:#E0F7FA,stroke:#00ACC1,stroke-width:2px,color:#000
+    classDef alarm fill:#FFF0D6,stroke:#F5A623,stroke-width:2px,color:#000
     classDef notification fill:#FFF4CC,stroke:#F8C300,stroke-width:2px,color:#000
 
     class Client client
-    class ALB alb
-    class SG security
-    class TG target
-    class EC2 ec2
-    class CloudWatch monitoring
+    class EC2 compute
+    class CW monitoring
+    class Alarm alarm
     class SNS notification
 ```
 
