@@ -377,21 +377,21 @@ The corrected deployment completed successfully.
 
 ## Screenshots
 
-### 01 - Task Details
+### 01 - VNet and Subnet Creation
 
-![Task Details](screenshots/01-task-details.png)
-
----
-
-### 02 - VNet and VM Deployment
-
-![VNet and VM Deployment](screenshots/02-vnet-created.png)
+![VNet and Subnet Creation](screenshots/01-vnet-and-subnet-creation.png)
 
 ---
 
-### 03 - SSH Access
+### 02 - VM Creation
 
-![SSH Access](screenshots/03-vm-ssh-access.png)
+![VM Creation](screenshots/02-vm-creation.png)
+
+---
+
+### 03 - SSH Connection
+
+![SSH Connection](screenshots/03-ssh-connection.png)
 
 ---
 
